@@ -1,5 +1,10 @@
 import Vue from "../node_modules/vue/dist/vue.min.js";
-import app from './components/App.vue';
+import VueRouter from 'vue-router';
+import router from './Router';
 
+Vue.use(VueRouter);
 Vue.config.debug = true;
-new Vue(app);
+
+const app = new Vue({
+    router
+}).$mount('#app');

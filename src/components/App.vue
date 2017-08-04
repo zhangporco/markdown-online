@@ -3,16 +3,19 @@
         el:"#app",
         data () {
             return {
-                name:"Porco",
-                age:"18"
+
             }
         }
     }
 </script>
 <template>
     <div>
-        <h1>姓名：{{name}}</h1>
-        <h2>{{age}}</h2>
+        <h1>Hello Porco!</h1>
+        <p>
+            <a v-link="{ path: '/foo' }">Go to Foo</a>
+            <a v-link="{ path: '/bar' }">Go to Bar</a>
+        </p>
+        <router-view></router-view>
     </div>
 </template>
 <style lang="sass">
