@@ -1,11 +1,10 @@
 import VueRouter from 'vue-router';
-
-const Foo = { template: '<div>foo</div>' }
-const Bar = { template: '<div>bar</div>' }
+import Markdown from './pages/Markdown.vue';
+import App from './pages/App.vue';
 
 const routes = [
-    { path: '/foo', component: Foo },
-    { path: '/bar', component: Bar }
+    { path: '/app', component: App },
+    { path: '/markdown', component: Markdown }
 ];
 
 const router = new VueRouter({
